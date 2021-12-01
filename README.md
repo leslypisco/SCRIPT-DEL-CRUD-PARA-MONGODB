@@ -1,6 +1,12 @@
 # SCRIPT-DEL-CRUD-PARA-MONGODB
+
+
 CRUD para sentencias en la base de datos MongoDB
+
+
 ############# INSERTAR   ###################### 
+
+
 db.nombres.insert([{
   "nombre": "Pavlov"
 }, {
@@ -203,7 +209,11 @@ db.nombres.insert([{
   "nombre": "Latia"
 }]);
 
-#########################  Modificar##########################
+
+
+#########################   Modificar  ##########################
+
+
 db.nombres.save({_id:ObjectId("61a3bd3ccd0c4ab65770ef96"), "nombre" : "Santiago" });
 db.nombres.save({_id:ObjectId("61a3bd3ccd0c4ab65770ef97"), "nombre" : "Sebastian" });
 db.nombres.save({_id:ObjectId("61a3bd3ccd0c4ab65770ef98"), "nombre" : "Diego" });
@@ -258,6 +268,8 @@ db.nombres.save({_id:ObjectId("61a3bd3ccd0c4ab65770efc7"), "nombre" : "Joshua" }
 
 
 ########################### Eliminar #######################
+
+
 db.nombres.remove({_id:ObjectId("61a3bd3ccd0c4ab65770ef96")});
 db.nombres.remove({_id:ObjectId("61a3bd3ccd0c4ab65770ef97")});
 db.nombres.remove({_id:ObjectId("61a3bd3ccd0c4ab65770ef98")});
